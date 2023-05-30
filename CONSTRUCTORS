@@ -1,0 +1,33 @@
+classsmartphone{ 
+  //Data Members(Properties)
+   stringmodel;
+  intyear_of_manufacture; 
+  bool_5g_supported;
+  public: 
+  //default constructor 
+    smartphone()
+    { model ="unknown";
+     4year_of_manufacture =0;
+     _5g_supported =false; }
+//parameterized constructor 
+    smartphone(stringmodel_string,intmanufacture,bool_5g_)
+     { //initialising data members 
+    model = model_string;
+     year_of_manufacture = manufacture;
+    _5g_supported = _5g_; }
+// copy constructor 
+    smartphone(smartphone &obj){ 
+      // copies data of the obj parameter COPY CONSTRUCTOR (COPIES CLASS TO OBJ )
+      model = obj.model; 
+      year_of_manufacture = obj.year_of_manufacture; 
+      _5g_supported = obj._5g_supported; } 
+}; 
+intmain(){ 
+//creating objects of smartphone class
+// using default constructor
+smartphone unknown; 
+// using parameterized constructor 
+smartphoneiphone("iphone 11",2019,false); 
+// using copy constructor
+smartphoneiphone_2(iphone); 
+}
